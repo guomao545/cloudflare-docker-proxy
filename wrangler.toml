@@ -1,4 +1,4 @@
-name = "cloudflare-docker-proxy"
+name = "docker"
 workers_dev = true
 main = "src/index.js"
 compatibility_date = "2021-12-07"
@@ -11,8 +11,8 @@ upstream_protocol="https"
 
 [vars]
 MODE="production"
-LOCAL_ADDRESS=""
-TARGET_UPSTREAM=""
+LOCAL_ADDRESS="https://docker.guomaojob.workers.dev"
+TARGET_UPSTREAM="https://registry-1.docker.io"
 
 [env.dev.vars]
 MODE="debug"
